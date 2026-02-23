@@ -66,7 +66,7 @@ function FavoritePage() {
       <section className="favorite-title">Вибране</section>
       <section className="favorite-items-container">
         <div className="favorite-items-block">
-          {items.length != 0 &&
+          {items.length !== 0 &&
             items.map((item) => (
               <div className="favorite-item" key={item.id} id={item.id}>
                 <img
@@ -98,7 +98,7 @@ function FavoritePage() {
             ))}
         </div>
         <div className="favorite-controls-block">
-          {items.length != 0 &&
+          {items.length !== 0 &&
             items.map((item) => (
               <div className="favorite-control" key={item.id} id={item.id}>
                 <button className="favorite-cart-button">
